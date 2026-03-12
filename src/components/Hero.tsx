@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const glowRef = useRef<HTMLDivElement>(null);
@@ -34,9 +35,11 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <span className="inline-block text-sm font-medium text-primary border border-border px-4 py-1.5 rounded-full mb-8">
-            Desenvolvimento Digital Profissional
-          </span>
+          <img 
+            src={logo} 
+            alt="RC Tech Logo" 
+            className="h-40 md:h-56 w-auto mx-auto mb-8 object-contain"
+          />
         </motion.div>
 
         <motion.h1
