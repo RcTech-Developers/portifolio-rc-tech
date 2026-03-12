@@ -19,6 +19,9 @@ const Footer = () => {
           <p className="text-sm text-foreground-muted text-center md:text-left">
             RC Tech – Desenvolvimento de Sites e Aplicativos Profissionais
           </p>
+          <p className="text-xs text-foreground-muted/70">
+            © {new Date().getFullYear()} Todos os direitos reservados.
+          </p>
         </div>
         <div className="flex items-center gap-4">
           {[
