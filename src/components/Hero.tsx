@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo-transparent.png";
+import logo from "@/assets/logo.svg";
 
 const Hero = () => {
   const glowRef = useRef<HTMLDivElement>(null);
