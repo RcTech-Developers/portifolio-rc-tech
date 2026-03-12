@@ -1,11 +1,27 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="border-t border-border py-12">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="text-sm text-foreground-muted">
-          © {new Date().getFullYear()} RC<span className="text-primary font-semibold">Tech</span>. Todos os direitos reservados.
+        <div className="flex flex-col items-center md:items-start gap-3">
+          <div className="flex items-center gap-3">
+            <img 
+              src={logo} 
+              alt="RC Tech Logo" 
+              className="h-10 w-auto object-contain"
+            />
+            <span className="text-foreground font-bold text-lg">
+              RC<span className="text-primary">Tech</span>
+            </span>
+          </div>
+          <p className="text-sm text-foreground-muted text-center md:text-left">
+            RC Tech – Desenvolvimento de Sites e Aplicativos Profissionais
+          </p>
+          <p className="text-xs text-foreground-muted/70">
+            © {new Date().getFullYear()} Todos os direitos reservados.
+          </p>
         </div>
         <div className="flex items-center gap-4">
           {[

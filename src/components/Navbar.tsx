@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Início", href: "#inicio" },
@@ -26,8 +27,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16">
-        <a href="#inicio" className="text-xl font-bold tracking-tight text-foreground">
-          RC<span className="text-primary">Tech</span>
+        <a href="#inicio" className="flex items-center gap-2 group">
+          <img 
+            src={logo} 
+            alt="RC Tech Logo" 
+            className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+          />
+          <span className="text-xl font-bold tracking-tight text-foreground">
+            RC<span className="text-primary">Tech</span>
+          </span>
         </a>
 
         {/* Desktop */}
