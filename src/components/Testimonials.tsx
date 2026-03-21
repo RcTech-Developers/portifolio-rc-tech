@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Carlos Oliveira",
     role: "CEO, Oliveira & Associados",
-    text: "A RC Tech transformou nossa presença digital. O site ficou incrível e as conversões aumentaram mais de 200%.",
+    text: "A RC Tech transformou nossa presença digital. O site ficou incrível e as conversões aumentaram mais de 100%.",
   },
   {
     name: "Ana Beatriz",

@@ -3,9 +3,9 @@ import { CheckCircle } from "lucide-react";
 
 const highlights = [
   "Sites profissionais e responsivos",
-  "Aplicativos para iOS e Android",
+  "Aplicativos para Android",
   "Sistemas personalizados sob medida",
-  "Suporte técnico dedicado",
+  "Design gráfico profissional"
 ];
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
               Sobre a <span className="text-primary">RC Tech</span>
             </h2>
             <p className="text-foreground-muted leading-relaxed mb-6 max-w-lg">
-              Somos uma empresa especializada em desenvolvimento digital, criando sites profissionais, aplicativos móveis e sistemas personalizados que impulsionam resultados reais para nossos clientes.
+              Somos uma empresa especializada em desenvolvimento digital e design, criando sites profissionais, aplicativos móveis e sistemas personalizados que impulsionam resultados reais para nossos clientes.
             </p>
             <p className="text-foreground-muted leading-relaxed mb-8 max-w-lg">
               Com foco em qualidade, performance e design moderno, transformamos ideias em soluções digitais que geram valor para o seu negócio.
@@ -48,10 +48,10 @@ const About = () => {
           >
             <div className="grid grid-cols-2 gap-4">
               {[
-                { number: "50+", label: "Projetos Entregues" },
+                { number: "20+", label: "Projetos Entregues" },
                 { number: "99.8%", label: "Uptime Garantido" },
-                { number: "+200%", label: "Em Conversões" },
-                { number: "24/7", label: "Suporte Técnico" },
+                { number: "+100%", label: "Em Conversões" },
+                { number: "15+", label: "Designs entregue" },
               ].map((stat) => (
                 <div
                   key={stat.label}

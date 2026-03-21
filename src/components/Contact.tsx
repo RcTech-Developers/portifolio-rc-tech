@@ -10,7 +10,7 @@ const Contact = () => {
     const whatsappMessage = encodeURIComponent(
       `Olá! Meu nome é ${form.name}. ${form.message}`
     );
-    window.open(`https://wa.me/5500000000000?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/5521967829806?text=${whatsappMessage}`, "_blank");
   };
 
   return (
@@ -80,7 +80,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5521967829806"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-card rounded-2xl p-5 card-shadow hover:card-shadow-hover hover:-translate-y-1 transition-all duration-250"
@@ -95,7 +95,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="mailto:contato@rctech.com.br"
+              href="mailto:developers.rctech@gmail.com?subject=Solicitação de orçamento&body=Olá, gostaria de mais informações sobre os serviços da RC Tech."
               className="flex items-center gap-4 bg-card rounded-2xl p-5 card-shadow hover:card-shadow-hover hover:-translate-y-1 transition-all duration-250"
             >
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -103,7 +103,7 @@ const Contact = () => {
               </div>
               <div>
                 <div className="text-sm font-semibold text-foreground">Email</div>
-                <div className="text-xs text-foreground-muted">contato@rctech.com.br</div>
+                <div className="text-xs text-foreground-muted">developers.rctech@gmail.com</div>
               </div>
             </a>
           </motion.div>

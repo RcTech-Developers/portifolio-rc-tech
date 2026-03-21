@@ -6,21 +6,25 @@ const projects = [
     title: "E-commerce Moderno",
     description: "Loja virtual completa com painel administrativo e integração de pagamento.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=340&fit=crop",
+    link: "https://rsportsrj.com.br/"
   },
   {
-    title: "App de Delivery",
-    description: "Aplicativo mobile para delivery com rastreamento em tempo real.",
+    title: "App de Filme",
+    description: "Aplicativo mobile para exibir sinopses, filtrá-los por gênero, buscar por título e marcar favoritos.",
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=340&fit=crop",
+    link: "https://www.canva.com/design/DAHEiBA9j98/4K-193cKlFQWuD2rdLBAmQ/edit?utm_content=DAHEiBA9j98&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
   },
   {
     title: "Dashboard Financeiro",
     description: "Painel de controle financeiro com gráficos e relatórios automatizados.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop",
+    link: "https://bakery-manager-cz7c.onrender.com/"
   },
   {
-    title: "Landing Page SaaS",
-    description: "Página de alta conversão para empresa de software como serviço.",
+    title: "Design Profissional",
+    description: "Design profissional focado em atrair atenção, comunicar valor e gerar resultados.",
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=340&fit=crop",
+    link: "https://drive.google.com/file/d/1f8xgdF78mNJnd2Szp1TGRdQx3Z2tLGID/preview"
   },
 ];
 
@@ -78,9 +82,14 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
                 <p className="text-sm text-foreground-muted mb-4">{project.description}</p>
-                <button className="text-sm text-primary hover:text-primary/80 transition-colors duration-150 flex items-center gap-1.5 font-medium">
+                <a 
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:text-primary/80 transition-colors duration-150 flex items-center gap-1.5 font-medium"
+                >
                   Ver Projeto <ExternalLink size={14} />
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}

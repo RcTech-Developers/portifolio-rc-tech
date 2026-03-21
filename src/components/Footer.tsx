@@ -17,7 +17,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="text-sm text-foreground-muted text-center md:text-left">
-            RC Tech – Desenvolvimento de Sites e Aplicativos Profissionais
+            RC Tech – Serviços E-commerce
           </p>
           <p className="text-xs text-foreground-muted/70">
             © {new Date().getFullYear()} Todos os direitos reservados.
@@ -25,9 +25,8 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-4">
           {[
-            { icon: Instagram, href: "#" },
-            { icon: Linkedin, href: "#" },
-            { icon: Github, href: "#" },
+            { icon: Instagram, href: "https://www.instagram.com/rctech.devs/" },         
+            { icon: Github, href: "https://github.com/RcTech-Developers" },
           ].map(({ icon: Icon, href }) => (
             <a
               key={Icon.displayName}

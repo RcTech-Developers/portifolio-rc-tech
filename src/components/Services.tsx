@@ -10,7 +10,7 @@ const services = [
   {
     icon: Smartphone,
     title: "Desenvolvimento de Aplicativos",
-    description: "Apps nativos e híbridos para iOS e Android com design intuitivo.",
+    description: "Apps nativos e híbridos para Android com design intuitivo.",
   },
   {
     icon: Settings,
@@ -24,8 +24,8 @@ const services = [
   },
   {
     icon: Zap,
-    title: "Otimização e Performance",
-    description: "Melhorias de velocidade, SEO e experiência do usuário.",
+    title: "Designs Profissionais",
+    description: "Designs estratégicos que fortalecem sua marca e destacam seu negócio no mercado.",
   },
 ];
 
