@@ -6,7 +6,7 @@ Aqui apresentamos nossos projetos, serviços e soluções digitais modernas.
 ---
 
 ## 🌐 Acesse o projeto
-👉 [](https://rctech-developers.github.io/portifolio-rc-tech/)
+👉 (https://rctech-developers.github.io/portifolio-rc-tech/)
 
 ---
 
