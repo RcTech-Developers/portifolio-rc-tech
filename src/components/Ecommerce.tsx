@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { ExternalLink } from "lucide-react";
 import novaGeracao from "@/assets/logoo-bg.png";
 import Rsports from "@/assets/Rsports.png";
+import Valfretes from "@/assets/valfretes.jpeg";
 
 const projects = [
   {
@@ -16,6 +17,12 @@ const projects = [
     description: "Melhor time Fut7 da região",
     image: novaGeracao,
     link: "https://nova-geracao-landing.vercel.app/",
+  },
+  {
+    title: "Val Fretes",
+    description: "Transporte profissional para residências e empresas com segurança e confiança",
+    image: Valfretes,
+    link: "https://val-fretes.vercel.app/",
   },
 ];
 
