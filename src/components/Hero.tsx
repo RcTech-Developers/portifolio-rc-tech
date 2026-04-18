@@ -17,15 +17,27 @@ const Hero = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
+  // 🔥 scroll suave (mesmo padrão do navbar)
+  const handleScroll = (id: string) => {
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Glow */}
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-backgroun to-background/80"
+    >
+      {/* 🔥 GLOW (AGORA ATRÁS DE TUDO) */}
       <div
         ref={glowRef}
-        className="glow-effect absolute w-[600px] h-[600px] md:w-[800px] md:h-[800px] pointer-events-none"
+        className="glow-effect absolute z-0 w-[600px] h-[600px] md:w-[800px] md:h-[800px]"
         style={{
           transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
           transition: "transform 0.3s ease-out",
+          opacity: 0.6,
         }}
       />
 
@@ -35,9 +47,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <img 
-            src={logo} 
-            alt="RC Tech Logo" 
+          <img
+            src={logo}
+            alt="RC Tech Logo"
             className="h-40 md:h-56 w-auto mx-auto mb-8 object-contain"
           />
         </motion.div>
@@ -69,18 +81,19 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
         >
-          <a
-            href="#projetos"
+          <button
+            onClick={() => handleScroll("#projetos")}
             className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-150 flex items-center gap-2"
           >
             Ver Projetos <ArrowRight size={18} />
-          </a>
-          <a
-            href="#contato"
+          </button>
+
+          <button
+            onClick={() => handleScroll("#contato")}
             className="px-6 py-3 rounded-lg font-medium border border-border text-foreground hover:bg-secondary transition-colors duration-150"
           >
             Solicitar Orçamento
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

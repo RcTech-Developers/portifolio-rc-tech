@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
     title: "E-commerce Moderno",
     description: "Loja virtual completa com painel administrativo e integração de pagamento.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=340&fit=crop",
-    link: "https://rsportsrj.com.br/"
+    internal: true // 👈 só esse é interno // 👈 AGORA É ROTA INTERNA
   },
   {
     title: "App de Filme",
@@ -79,17 +80,30 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
+
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
                 <p className="text-sm text-foreground-muted mb-4">{project.description}</p>
-                <a 
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:text-primary/80 transition-colors duration-150 flex items-center gap-1.5 font-medium"
-                >
-                  Ver Projeto <ExternalLink size={14} />
-                </a>
+
+                {/* 🔥 CONDIÇÃO AQUI */}
+               {project.internal ? (
+                  <Link
+                    to="/ecommerce"
+                    className="text-sm text-primary hover:text-primary/80 flex items-center gap-1.5 font-medium"
+                  >
+                    Ver Projeto <ExternalLink size={14} />
+                  </Link>
+                ) : (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-primary hover:text-primary/80 flex items-center gap-1.5 font-medium"
+                  >
+                    Ver Projeto <ExternalLink size={14} />
+                  </a>
+                )}
+
               </div>
             </motion.div>
           ))}
