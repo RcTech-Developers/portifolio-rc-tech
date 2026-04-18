@@ -10,12 +10,6 @@ const projects = [
     internal: true // 👈 só esse é interno // 👈 AGORA É ROTA INTERNA
   },
   {
-    title: "App de Filme",
-    description: "Aplicativo mobile para exibir sinopses, filtrá-los por gênero, buscar por título e marcar favoritos.",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=340&fit=crop",
-    link: "https://www.canva.com/design/DAHEiBA9j98/4K-193cKlFQWuD2rdLBAmQ/edit?utm_content=DAHEiBA9j98&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-  },
-  {
     title: "Dashboard Financeiro",
     description: "Painel de controle financeiro com gráficos e relatórios automatizados.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop",
