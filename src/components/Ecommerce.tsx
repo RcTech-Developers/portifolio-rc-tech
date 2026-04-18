@@ -16,7 +16,7 @@ const projects = [
     title: "Nova Geração - Landing Page",
     description: "Melhor time Fut7 da região",
     image: novaGeracao,
-    link: "https://nova-geracao-landing.vercel.app/",
+    link: "https://nova-geracao.vercel.app/",
   },
   {
     title: "Val Fretes",
